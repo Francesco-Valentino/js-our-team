@@ -48,9 +48,11 @@ function fillCard(index, nameID, roleID, cardID){
     let memberPic = document.createElement("img");
     memberPic.src = "img/" + team[index].photo;
     memberCard.appendChild(memberPic);
-
-    console.log(memberPic);
 }
 
 fillCard(0, "firstMemberName", "firstMemberRole", "firstCard");
-
+fillCard(1, "secondMemberName", "secondMemberRole", "secondCard");
+fillCard(2, "thirdMemberName", "thirdMemberRole", "thirdCard");
+fillCard(3, "fourthMemberName", "fourthMemberRole", "fourthCard");
+fillCard(4, "fifthMemberName", "fifthMemberRole", "fifthCard");
+fillCard(5, "sixthMemberName", "sixthMemberRole", "sixthCard");
