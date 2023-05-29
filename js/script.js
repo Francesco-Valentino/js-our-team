@@ -41,7 +41,6 @@ for (let i = 1; i < team.length; i++){
 }
 
 function fillCard(index, nameID, roleID, cardID){
-    //recupero nome, ruolo e immagine in tre variabili, poi recupero gli elementi dom a cui vanno aggiunte le stringhe create
     let memberCard = document.getElementById(cardID);
     let memberName = document.getElementById(nameID).innerHTML = team[index].name;
     let memberRole = document.getElementById(roleID).innerHTML = team[index].role;
