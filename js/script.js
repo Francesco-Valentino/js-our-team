@@ -40,3 +40,17 @@ for (let i = 1; i < team.length; i++){
     console.log(team[i].name + ", " + team[i].role + ", " + team[i].photo);
 }
 
+function fillCard(index, nameID, roleID, cardID){
+    //recupero nome, ruolo e immagine in tre variabili, poi recupero gli elementi dom a cui vanno aggiunte le stringhe create
+    let memberCard = document.getElementById(cardID);
+    let memberName = document.getElementById(nameID).innerHTML = team[index].name;
+    let memberRole = document.getElementById(roleID).innerHTML = team[index].role;
+    let memberPic = document.createElement("img");
+    memberPic.src = "img/" + team[index].photo;
+    memberCard.appendChild(memberPic);
+
+    console.log(memberPic);
+}
+
+fillCard(0, "firstMemberName", "firstMemberRole", "firstCard");
+
